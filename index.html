@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Roboto" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Kayetube :)</title>
+  </head>
+  <body>
+    <nav class="flex-div">
+      <div class="nav-left flex-div">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          preserveAspectRatio="xMidYMid meet"
+          focusable="false"
+          class="yt-icon menu-icon"
+        >
+          <g class="style-scope yt-icon menu-icon">
+            <path
+              d="M21,6H3V5h18V6z M21,11H3v1h18V11z M21,17H3v1h18V17z"
+              class="style-scope yt-icon menu-icon"
+            ></path>
+          </g>
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+          viewBox="0 0 68 48"
+          class="yt-logo"
+        >
+          <path
+            class="yt-logo"
+            d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"
+            fill="#f00"
+          ></path>
+          <path d="M 45,24 27,14 27,34" fill="#fff"></path>
+        </svg>
+        <span class="logo-text">KayeTube</span>
+      </div>
+      <div class="nav-middle flex-div">
+        <div class="search-box flex-div">
+          <input type="text" placeholder="Search" />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            preserveAspectRatio="xMidYMid meet"
+            focusable="false"
+            class="style-scope yt-icon nav-middle-icon search-icon"
+          >
+            <g class="style-scope yt-icon nav-middle-icon search-icon">
+              <path
+                d="M20.87,20.17l-5.59-5.59C16.35,13.35,17,11.75,17,10c0-3.87-3.13-7-7-7s-7,3.13-7,7s3.13,7,7,7c1.75,0,3.35-0.65,4.58-1.71 l5.59,5.59L20.87,20.17z M10,16c-3.31,0-6-2.69-6-6s2.69-6,6-6s6,2.69,6,6S13.31,16,10,16z"
+                class="style-scope yt-icon search-icon"
+              ></path>
+            </g>
+          </svg>
+        </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          preserveAspectRatio="xMidYMid meet"
+          focusable="false"
+          class="style-scope yt-icon nav-middle-icon"
+        >
+          <g class="style-scope yt-icon nav-middle-icon">
+            <path
+              d="M12 3C10.34 3 9 4.37 9 6.07V11.93C9 13.63 10.34 15 12 15C13.66 15 15 13.63 15 11.93V6.07C15 4.37 13.66 3 12 3ZM18.5 12H17.5C17.5 15.03 15.03 17.5 12 17.5C8.97 17.5 6.5 15.03 6.5 12H5.5C5.5 15.24 7.89 17.93 11 18.41V21H13V18.41C16.11 17.93 18.5 15.24 18.5 12Z"
+              class="style-scope yt-icon nav-middle-icon"
+            ></path>
+          </g>
+        </svg>
+      </div>
+      <div class="nav-right flex-div">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          preserveAspectRatio="xMidYMid meet"
+          focusable="false"
+          class="style-scope yt-icon nav-right-icon"
+        >
+          <g class="style-scope yt-icon nav-right-icon">
+            <path
+              d="M14,13h-3v3H9v-3H6v-2h3V8h2v3h3V13z M17,6H3v12h14v-6.39l4,1.83V8.56l-4,1.83V6 M18,5v3.83L22,7v8l-4-1.83V19H2V5H18L18,5 z"
+              class="style-scope yt-icon nav-right-ircon"
+            ></path>
+          </g>
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          preserveAspectRatio="xMidYMid meet"
+          focusable="false"
+          class="style-scope yt-icon nav-right-icon"
+        >
+          <g class="style-scope yt-icon nav-right-icon">
+            <path
+              d="M16,4v4h4V4H16z M19,7h-2V5h2V7z M16,10v4h4v-4H16z M19,13h-2v-2h2V13z M10,4v4h4V4H10z M13,7h-2V5h2V7z M10,10v4h4v-4H10z M13,13h-2v-2h2V13z M16,16v4h4v-4H16z M19,19h-2v-2h2V19z M10,16v4h4v-4H10z M13,19h-2v-2h2V19z M4,4v4h4V4H4z M7,7H5V5h2V7z M4,10 v4h4v-4H4z M7,13H5v-2h2V13z M4,16v4h4v-4H4z M7,19H5v-2h2V19z"
+              class="style-scope yt-icon"
+            ></path>
+          </g>
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          preserveAspectRatio="xMidYMid meet"
+          focusable="false"
+          class="style-scope yt-icon nav-right-icon"
+        >
+          <g class="style-scope yt-icon nav-right-icon">
+            <path
+              d="M10,20h4c0,1.1-0.9,2-2,2S10,21.1,10,20z M20,17.35V19H4v-1.65l2-1.88v-5.15c0-2.92,1.56-5.22,4-5.98V3.96 c0-1.42,1.49-2.5,2.99-1.76C13.64,2.52,14,3.23,14,3.96l0,0.39c2.44,0.75,4,3.06,4,5.98v5.15L20,17.35z M19,17.77l-2-1.88v-5.47 c0-2.47-1.19-4.36-3.13-5.1c-1.26-0.53-2.64-0.5-3.84,0.03C8.15,6.11,7,7.99,7,10.42v5.47l-2,1.88V18h14V17.77z"
+              class="style-scope yt-icon nav-right-icon"
+            ></path>
+          </g>
+        </svg>
+        <img
+          class="user-icon"
+          src="https://yt3.ggpht.com/ytc/AKedOLScd3qE7Blu2CtRbzkfBzbEwE3_bIpO-dRaQjTPTg=s68-c-k-c0x00ffffff-no-rj"
+          alt="ben awad picture"
+        />
+      </div>
+    </nav>
+    <!----------------------------Sidebar------------------------>
+    <div class="sidebar">
+      <div class="shortcut-links">
+        <div class="shortcut-container">
+          <a href="">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              preserveAspectRatio="xMidYMid meet"
+              focusable="false"
+              class="style-scope yt-icon sidebar-icon"
+            >
+              <g class="style-scope yt-icon">
+                <path
+                  d="M4,10V21h6V15h4v6h6V10L12,3Z"
+                  class="style-scope yt-icon sidebar-icon"
+                ></path>
+              </g>
+            </svg>
+            <p>Home</p>
+          </a>
+        </div>
+        <div class="shortcut-container">
+          <a href="">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              preserveAspectRatio="xMidYMid meet"
+              focusable="false"
+              class="style-scope yt-icon sidebar-icon"
+            >
+              <g class="style-scope yt-icon sidebar-icon">
+                <path
+                  d="M9.8,9.8l-3.83,8.23l8.23-3.83l3.83-8.23L9.8,9.8z M13.08,12.77c-0.21,0.29-0.51,0.48-0.86,0.54 c-0.07,0.01-0.15,0.02-0.22,0.02c-0.28,0-0.54-0.08-0.77-0.25c-0.29-0.21-0.48-0.51-0.54-0.86c-0.06-0.35,0.02-0.71,0.23-0.99 c0.21-0.29,0.51-0.48,0.86-0.54c0.35-0.06,0.7,0.02,0.99,0.23c0.29,0.21,0.48,0.51,0.54,0.86C13.37,12.13,13.29,12.48,13.08,12.77z M12,3c4.96,0,9,4.04,9,9s-4.04,9-9,9s-9-4.04-9-9S7.04,3,12,3 M12,2C6.48,2,2,6.48,2,12s4.48,10,10,10s10-4.48,10-10S17.52,2,12,2 L12,2z"
+                  class="style-scope yt-icon sidebar-icon"
+                ></path>
+              </g>
+            </svg>
+
+            <p>Explore</p>
+          </a>
+        </div>
+        <div class="shortcut-container">
+          <a href="">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              preserveAspectRatio="xMidYMid meet"
+              focusable="false"
+              class="style-scope yt-icon sidebar-icon"
+            >
+              <g class="style-scope yt-icon sidebar-icon">
+                <path
+                  d="M10,18v-6l5,3L10,18z M17,3H7v1h10V3z M20,6H4v1h16V6z M22,9H2v12h20V9z M3,10h18v10H3V10z"
+                  class="style-scope yt-icon sidebar-icon"
+                ></path>
+              </g>
+            </svg>
+            <p>Subscriptions</p>
+          </a>
+        </div>
+        <div class="shortcut-container">
+          <a href="">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              preserveAspectRatio="xMidYMid meet"
+              focusable="false"
+              class="style-scope yt-icon sidebar-icon"
+            >
+              <g class="style-scope yt-icon sidebar-icon">
+                <path
+                  d="M11,7l6,3.5L11,14V7L11,7z M18,20H4V6H3v15h15V20z M21,18H6V3h15V18z M7,17h13V4H7V17z"
+                  class="style-scope yt-icon sidebar-icon"
+                ></path>
+              </g>
+            </svg>
+            <p>Library</p>
+          </a>
+        </div>
+        <div class="shortcut-container">
+          <a href="">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              preserveAspectRatio="xMidYMid meet"
+              focusable="false"
+              class="style-scope yt-icon sidebar-icon"
+            >
+              <g class="style-scope yt-icon sidebar-icon">
+                <path
+                  d="M14.97,16.95L10,13.87V7h2v5.76l4.03,2.49L14.97,16.95z M22,12c0,5.51-4.49,10-10,10S2,17.51,2,12h1c0,4.96,4.04,9,9,9 s9-4.04,9-9s-4.04-9-9-9C8.81,3,5.92,4.64,4.28,7.38C4.17,7.56,4.06,7.75,3.97,7.94C3.96,7.96,3.95,7.98,3.94,8H8v1H1.96V3h1v4.74 C3,7.65,3.03,7.57,3.07,7.49C3.18,7.27,3.3,7.07,3.42,6.86C5.22,3.86,8.51,2,12,2C17.51,2,22,6.49,22,12z"
+                  class="style-scope yt-icon sidebar-icon"
+                ></path>
+              </g>
+            </svg>
+            <p>History</p>
+          </a>
+        </div>
+        <div class="shortcut-container">
+          <a href="">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              preserveAspectRatio="xMidYMid meet"
+              focusable="false"
+              class="style-scope yt-icon sidebar-icon"
+            >
+              <g class="style-scope yt-icon sidebar-icon">
+                <path
+                  d="M4,21H3V3h1V21z M8,15H6v2h2V15z M8,11H6v2h2V11z M8,7H6v2h2V7z M18,15h-2v2h2V15z M8,19H6v2h2V19z M18,19h-2v2h2V19z M18,11h-2v2h2V11z M18,7h-2v2h2V7z M8,3H6v2h2V3z M18,3h-2v2h2V3z M21,3h-1v18h1V3z"
+                  class="style-scope yt-icon sidebar-icon"
+                ></path>
+              </g>
+            </svg>
+            <p>Playlist</p>
+          </a>
+        </div>
+        <div class="shortcut-container">
+          <a href="">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              preserveAspectRatio="xMidYMid meet"
+              focusable="false"
+              class="style-scope yt-icon sidebar-icon"
+            >
+              <g class="style-scope yt-icon sidebar-icon">
+                <path
+                  d="M18.77,11h-4.23l1.52-4.94C16.38,5.03,15.54,4,14.38,4c-0.58,0-1.14,0.24-1.52,0.65L7,11H3v10h4h1h9.43 c1.06,0,1.98-0.67,2.19-1.61l1.34-6C21.23,12.15,20.18,11,18.77,11z M7,20H4v-8h3V20z M19.98,13.17l-1.34,6 C18.54,19.65,18.03,20,17.43,20H8v-8.61l5.6-6.06C13.79,5.12,14.08,5,14.38,5c0.26,0,0.5,0.11,0.63,0.3 c0.07,0.1,0.15,0.26,0.09,0.47l-1.52,4.94L13.18,12h1.35h4.23c0.41,0,0.8,0.17,1.03,0.46C19.92,12.61,20.05,12.86,19.98,13.17z"
+                  class="style-scope yt-icon sidebar-icon"
+                ></path>
+              </g>
+            </svg>
+            <p>Liked Videos</p>
+          </a>
+        </div>
+        <div class="shortcut-container">
+          <a href="">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              preserveAspectRatio="xMidYMid meet"
+              focusable="false"
+              class="style-scope yt-icon sidebar-icon"
+            >
+              <g class="style-scope yt-icon sidebar-icon">
+                <path
+                  d="M12,15.7L5.6,9.4l0.7-0.7l5.6,5.6l5.6-5.6l0.7,0.7L12,15.7z"
+                  class="style-scope yt-icon sidebar-icon"
+                ></path>
+              </g>
+            </svg>
+            <p>Show more</p>
+          </a>
+        </div>
+        <hr />
+      </div>
+      <div class="subscribed-list">
+        <h3>SUBSCRIPTIONS</h3>
+        <div class="shortcut-container">
+          <a href="">
+            <img
+              src="https://yt3.ggpht.com/ytc/AKedOLSaMOvjLMq79kPHCat1I7bcdq9Mk1eOIgMPjr2a1Q=s68-c-k-c0x00ffffff-no-rj"
+              alt=""
+            />
+            <p>theScore esports</p>
+          </a>
+        </div>
+        <div class="shortcut-container">
+          <a href="">
+            <img
+              src="https://yt3.ggpht.com/ytc/AKedOLTcIl6kKt3lEPJEySUf_hpHiKDKiFeo9eWPReLysQ=s68-c-k-c0x00ffffff-no-rj"
+              alt=""
+            />
+            <p>Fireship</p>
+          </a>
+        </div>
+        <div class="shortcut-container">
+          <a href="">
+            <img
+              src="https://yt3.ggpht.com/ytc/AKedOLT9Uj3ce_9u8dVShStyKxsuicxvWH_vjJrXdK69=s68-c-k-c0x00ffffff-no-rj"
+              alt="Lofi"
+            />
+            <p>Lofi</p>
+          </a>
+        </div>
+        <div class="shortcut-container">
+          <a href="">
+            <img
+              src="https://yt3.ggpht.com/ytc/AKedOLT1tLx7BgAa7_SHaXE0hDRjQu1BRihsEDZ3lmUUcg=s68-c-k-c0x00ffffff-no-rj"
+              alt=""
+            />
+            <p>Kevin Powell</p>
+          </a>
+        </div>
+        <div class="shortcut-container">
+          <a href="">
+            <img
+              src="https://yt3.ggpht.com/ciUS4plSzwFHITvneQqTYWev-lSlZ0UJqNghREL1Lx0N1HM5U8r6v-sWIPJ_X1Av19Vvc4uk3Q=s68-c-k-c0x00ffffff-no-rj"
+              alt=""
+            />
+            <p>Tech Illiterate</p>
+          </a>
+        </div>
+        <div class="shortcut-container">
+          <a href="">
+            <img
+              src="https://yt3.ggpht.com/ytc/AKedOLTw_T5rUQdrd1Xw9g6Gj_OHcL4xbFiE98gJHV3H2Q=s68-c-k-c0x00ffffff-no-rj"
+              alt=""
+            />
+            <p>Linus Tech Tips</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- ----- Main ----- -->
+    <div class="container">
+      <div class="potential-banner"><!--May add Genre selector--></div>
+      <div class="list-container">
+        <div class="vid-list">
+          <a href="">
+            <img
+              src="https://i.ytimg.com/vi/OOaEJGMg2TM/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBajKaWu_3l7VlpLiRd5wxhzuUTvQ"
+              alt=""
+              class="thumbnail"
+            />
+          </a>
+          <div class="flex-div">
+            <img
+              src="https://yt3.ggpht.com/ytc/AKedOLRu62R8JpHTFOu25yWq9Yp3otgHInEnkMlCv1Qo=s176-c-k-c0x00ffffff-no-rj"
+              alt="seo md icon"
+            />
+            <div class="vid-info">
+              <a href="">Yak Airlines Flight Crashes Into The Volga River | Hocke...</a>
+              <p>
+                Mayday: Air Disaster
+                <svg
+                  viewBox="0 0 24 24"
+                  preserveAspectRatio="xMidYMid meet"
+                  focusable="false"
+                  class="verified"
+                >
+                  <g class="verified">
+                    <path
+                      d="M12,2C6.5,2,2,6.5,2,12c0,5.5,4.5,10,10,10s10-4.5,10-10C22,6.5,17.5,2,12,2z M9.8,17.3l-4.2-4.1L7,11.8l2.8,2.7L17,7.4 l1.4,1.4L9.8,17.3z"
+                      class="verified"
+                    ></path>
+                  </g>
+                </svg>
+              </p>
+              <p>10k views<span class="little-dot">•</span>11 hours ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="vid-list">
+          <a href="">
+            <img
+              class="thumbnail"
+              src="https://i.ytimg.com/vi/n61ULEU7CO0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAi4TCpAtbxLFIBULRlcZHudl1uFw"
+              alt=""
+            />
+          </a>
+          <div class="flex-div">
+            <img
+              src="https://yt3.ggpht.com/ytc/AKedOLRBxyT5Y9xKYWPmnShA_utGUvcJnxWaFmc0CtWTkg=s68-c-k-c0x00ffffff-no-rj"
+              alt=""
+            />
+            <div class="vid-info">
+              <a href="">Best of lofi hip hop 2021 ✨ - beats to relax/study to</a>
+
+              <p>
+                Lofi Girl
+                <svg
+                  viewBox="0 0 24 24"
+                  preserveAspectRatio="xMidYMid meet"
+                  focusable="false"
+                  class="verified"
+                >
+                  <g class="verified">
+                    <path
+                      d="M12,2C6.5,2,2,6.5,2,12c0,5.5,4.5,10,10,10s10-4.5,10-10C22,6.5,17.5,2,12,2z M9.8,17.3l-4.2-4.1L7,11.8l2.8,2.7L17,7.4 l1.4,1.4L9.8,17.3z"
+                      class="verified"
+                    ></path>
+                  </g>
+                </svg>
+              </p>
+              <p>2.3M views<span class="little-dot">•</span>2 days ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="vid-list">
+          <a href="">
+            <img
+              class="thumbnail"
+              src="https://i.ytimg.com/vi/x-aeDaHIEbY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBWQjs-ycasp0a4M6_yLR9229lirw"
+              alt=""
+            />
+          </a>
+          <div class="flex-div">
+            <img
+              src="https://yt3.ggpht.com/ytc/AKedOLQ7HgY_GNJNK64MfbUngRvzIV0RkjTiDqOSwniZOA=s68-c-k-c0x00ffffff-no-rj"
+              alt=""
+            />
+            <div class="vid-info">
+              <a href="">Get A Herman Miller Aeron for CHEAP + Buying Guide!!!</a>
+              <p class="vid-channel">
+                Ahnestly
+                <svg
+                  viewBox="0 0 24 24"
+                  preserveAspectRatio="xMidYMid meet"
+                  focusable="false"
+                  class="verified"
+                >
+                  <g class="verified">
+                    <path
+                      d="M12,2C6.5,2,2,6.5,2,12c0,5.5,4.5,10,10,10s10-4.5,10-10C22,6.5,17.5,2,12,2z M9.8,17.3l-4.2-4.1L7,11.8l2.8,2.7L17,7.4 l1.4,1.4L9.8,17.3z"
+                      class="verified"
+                    ></path>
+                  </g>
+                </svg>
+              </p>
+              <p>15k views<span class="little-dot">•</span>2 days ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="vid-list">
+          <a href="">
+            <img
+              class="thumbnail"
+              src="https://i.ytimg.com/vi/zbGgq-HlKWc/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCnVnsk1M3IgFbuq86uyuh3GNaolw"
+              alt=""
+            />
+          </a>
+          <div class="flex-div">
+            <img
+              src="https://yt3.ggpht.com/ytc/AKedOLQMmMRmm2fL1MmoqyCeUoBgNmo6EeM0DtSa_s_bHQ=s68-c-k-c0x00ffffff-no-rj"
+              alt=""
+            />
+            <div class="vid-info">
+              <a href="">Kitchen Nightmares Season 2 Episode 12</a>
+              <p>
+                Kitchen Nightmares
+                <svg
+                  viewBox="0 0 24 24"
+                  preserveAspectRatio="xMidYMid meet"
+                  focusable="false"
+                  class="verified"
+                >
+                  <g class="verified">
+                    <path
+                      d="M12,2C6.5,2,2,6.5,2,12c0,5.5,4.5,10,10,10s10-4.5,10-10C22,6.5,17.5,2,12,2z M9.8,17.3l-4.2-4.1L7,11.8l2.8,2.7L17,7.4 l1.4,1.4L9.8,17.3z"
+                      class="verified"
+                    ></path>
+                  </g>
+                </svg>
+              </p>
+              <p>15k views<span class="little-dot">•</span>2 days ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="vid-list">
+          <a href="">
+            <img
+              class="thumbnail"
+              src="https://i.ytimg.com/vi/PCk_vuD1RQ0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCLkStQzh3RAdo1-xO3Kxxv0ZtILQ"
+              alt=""
+            />
+          </a>
+          <div class="flex-div">
+            <img
+              src="https://yt3.ggpht.com/MPtld88eK6frFzHzDsGt4ZEB8hRZjzx3LOfmEQSq5ZF5r8ZsPSFy_Q3y5W2VbL8CE8EWlOA8Tw=s68-c-k-c0x00ffffff-no-rj"
+              alt=""
+            />
+            <div class="vid-info">
+              <a href="">The Teen Assassin Who Killed 17 People...</a>
+              <p>
+                Twisted Minds
+                <svg
+                  viewBox="0 0 24 24"
+                  preserveAspectRatio="xMidYMid meet"
+                  focusable="false"
+                  class="verified"
+                >
+                  <g class="verified">
+                    <path
+                      d="M12,2C6.5,2,2,6.5,2,12c0,5.5,4.5,10,10,10s10-4.5,10-10C22,6.5,17.5,2,12,2z M9.8,17.3l-4.2-4.1L7,11.8l2.8,2.7L17,7.4 l1.4,1.4L9.8,17.3z"
+                      class="verified"
+                    ></path>
+                  </g>
+                </svg>
+              </p>
+              <p>1.9M views<span class="little-dot">•</span>1 month ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="vid-list">
+          <a href="">
+            <img
+              class="thumbnail"
+              src="https://i.ytimg.com/vi/DWcJFNfaw9c/hq720_live.jpg?sqp=CLShvo8G-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDiqt8dtHnPbXGxR_cOec8JnYAJEg"
+              alt=""
+            />
+          </a>
+          <div class="flex-div">
+            <img
+              src="https://yt3.ggpht.com/ytc/AKedOLRBxyT5Y9xKYWPmnShA_utGUvcJnxWaFmc0CtWTkg=s68-c-k-c0x00ffffff-no-rj"
+              alt=""
+            />
+            <div class="vid-info">
+              <a href="">lofi hip hop radio - beats to sleep/chill to</a>
+              <p>
+                Lofi Girl
+                <svg
+                  viewBox="0 0 24 24"
+                  preserveAspectRatio="xMidYMid meet"
+                  focusable="false"
+                  class="verified"
+                >
+                  <g class="verified">
+                    <path
+                      d="M12,2C6.5,2,2,6.5,2,12c0,5.5,4.5,10,10,10s10-4.5,10-10C22,6.5,17.5,2,12,2z M9.8,17.3l-4.2-4.1L7,11.8l2.8,2.7L17,7.4 l1.4,1.4L9.8,17.3z"
+                      class="verified"
+                    ></path>
+                  </g>
+                </svg>
+              </p>
+              <p>2.3M views<span class="little-dot">•</span>5 days ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="vid-list">
+          <a href="">
+            <img
+              class="thumbnail"
+              src="https://i.ytimg.com/vi/-O78Of3BFpA/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC8-T8kooKKjHUInOvexX6ZlIIEOg"
+              alt=""
+            />
+          </a>
+          <div class="flex-div">
+            <img
+              src="https://yt3.ggpht.com/ytc/AKedOLSaMOvjLMq79kPHCat1I7bcdq9Mk1eOIgMPjr2a1Q=s68-c-k-c0x00ffffff-no-rj"
+              alt=""
+            />
+            <div class="vid-info">
+              <a href="">Can Stewie Save NA CS:GO?</a>
+              <p>
+                theScore esports
+                <svg
+                  viewBox="0 0 24 24"
+                  preserveAspectRatio="xMidYMid meet"
+                  focusable="false"
+                  class="verified"
+                >
+                  <g class="verified">
+                    <path
+                      d="M12,2C6.5,2,2,6.5,2,12c0,5.5,4.5,10,10,10s10-4.5,10-10C22,6.5,17.5,2,12,2z M9.8,17.3l-4.2-4.1L7,11.8l2.8,2.7L17,7.4 l1.4,1.4L9.8,17.3z"
+                      class="verified"
+                    ></path>
+                  </g>
+                </svg>
+              </p>
+              <p>58K views<span class="little-dot">•</span>6 hours ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="vid-list">
+          <a href="">
+            <img
+              class="thumbnail"
+              src="https://i.ytimg.com/vi/2CuTeGttxLk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAzYjqhgkD-WL8_bjobxuf7wwPtGg"
+              alt=""
+            />
+          </a>
+          <div class="flex-div">
+            <img
+              src="https://yt3.ggpht.com/lAk48f7ez_Z78afKJbwNaH00JUE9Hct5rY0uuBcoQbDOzoypDGqyD0IJzTuZFxL_gUELRXJT=s68-c-k-c0x00ffffff-no-rj"
+              alt=""
+            />
+            <div class="vid-info">
+              <a href="">I hosted a $100,000 Hide and Seek tournament...</a>
+              <p>
+                Disguised Toast
+                <svg
+                  viewBox="0 0 24 24"
+                  preserveAspectRatio="xMidYMid meet"
+                  focusable="false"
+                  class="verified"
+                >
+                  <g class="verified">
+                    <path
+                      d="M12,2C6.5,2,2,6.5,2,12c0,5.5,4.5,10,10,10s10-4.5,10-10C22,6.5,17.5,2,12,2z M9.8,17.3l-4.2-4.1L7,11.8l2.8,2.7L17,7.4 l1.4,1.4L9.8,17.3z"
+                      class="verified"
+                    ></path>
+                  </g>
+                </svg>
+              </p>
+              <p>1.7M views<span class="little-dot">•</span>1 month ago</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+    </div>
+    <div class="container">
+      <h2>COVID-19 news</h2>
+      <div class="list-container">
+        <div class="vid-list">
+          <a href="">
+            <img
+              class="thumbnail"
+              src="https://i.ytimg.com/vi/6HQXiWIaPC0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLADGqZU6ExJjgqiSuUtgpFL6r7Qiw"
+              alt=""
+            />
+          </a>
+          <div class="flex-div">
+            <img
+              src="https://yt3.ggpht.com/ytc/AKedOLTTLQ2yF3BtL7n0YxVPupL5dMXUav0W0xyEEHqJyw=s68-c-k-c0x00ffffff-no-rj"
+              alt=""
+            />
+            <div class="vid-info">
+              <a href=""
+                >COVID-19: Staycation tax credit in Ontario looks to kickstart
+                tourism...</a
+              >
+              <p>
+                Global News
+                <svg
+                  viewBox="0 0 24 24"
+                  preserveAspectRatio="xMidYMid meet"
+                  focusable="false"
+                  class="verified"
+                >
+                  <g class="verified">
+                    <path
+                      d="M12,2C6.5,2,2,6.5,2,12c0,5.5,4.5,10,10,10s10-4.5,10-10C22,6.5,17.5,2,12,2z M9.8,17.3l-4.2-4.1L7,11.8l2.8,2.7L17,7.4 l1.4,1.4L9.8,17.3z"
+                      class="verified"
+                    ></path>
+                  </g>
+                </svg>
+              </p>
+              <p>59k views<span class="little-dot">•</span>1 day ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="vid-list">
+          <a href="">
+            <img
+              class="thumbnail"
+              src="https://i.ytimg.com/vi/QzExqkqHK7o/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBH0LLZm6dmWYCOb-t7-RE5RiVyuA"
+              alt=""
+            />
+          </a>
+          <div class="flex-div">
+            <img
+              src="https://yt3.ggpht.com/UDLxCALyHXJN1-ZTawdO39fhMZLrAiPH2EiwbPNffqmGHkU01HVT20oaPCJvt7iSoRchrTTwvA=s68-c-k-c0x00ffffff-no-rj"
+              alt=""
+            />
+            <div class="vid-info">
+              <a href=""
+                >How this grocer is dealing with COVID-19 supply chain issues amid..</a
+              >
+              <p>
+                CBC News
+                <svg
+                  viewBox="0 0 24 24"
+                  preserveAspectRatio="xMidYMid meet"
+                  focusable="false"
+                  class="verified"
+                >
+                  <g class="verified">
+                    <path
+                      d="M12,2C6.5,2,2,6.5,2,12c0,5.5,4.5,10,10,10s10-4.5,10-10C22,6.5,17.5,2,12,2z M9.8,17.3l-4.2-4.1L7,11.8l2.8,2.7L17,7.4 l1.4,1.4L9.8,17.3z"
+                      class="verified"
+                    ></path>
+                  </g>
+                </svg>
+              </p>
+              <p>192k views<span class="little-dot">•</span>2 days ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="vid-list">
+          <a href="">
+            <img
+              class="thumbnail"
+              src="https://i.ytimg.com/vi/YIW6ZRZwQ9U/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCEASPPQ8dBe3RpWQ-9lAtoYK2svQ"
+              alt=""
+            />
+          </a>
+          <div class="flex-div">
+            <img
+              src="https://yt3.ggpht.com/ytc/AKedOLTuVkNRg-5CsnLkse6gcnsKFK7jW8cLsRnBoVmnmO0=s68-c-k-c0x00ffffff-no-rj"
+              alt=""
+            />
+            <div class="vid-info">
+              <a href=""
+                >'It feels like betrayal': Families respond to COVID-19 changes as..</a
+              >
+              <p>
+                CTV News
+                <svg
+                  viewBox="0 0 24 24"
+                  preserveAspectRatio="xMidYMid meet"
+                  focusable="false"
+                  class="verified"
+                >
+                  <g class="verified">
+                    <path
+                      d="M12,2C6.5,2,2,6.5,2,12c0,5.5,4.5,10,10,10s10-4.5,10-10C22,6.5,17.5,2,12,2z M9.8,17.3l-4.2-4.1L7,11.8l2.8,2.7L17,7.4 l1.4,1.4L9.8,17.3z"
+                      class="verified"
+                    ></path>
+                  </g>
+                </svg>
+              </p>
+              <p>61k views<span class="little-dot">•</span>2 days ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="vid-list">
+          <a href="">
+            <img
+              class="thumbnail"
+              src="https://i.ytimg.com/vi/Cqi9cB-EMrc/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCAH84dBbRNbWsPlY9P-3rzOz2ShA"
+              alt=""
+            />
+          </a>
+          <div class="flex-div">
+            <img
+              src="https://yt3.ggpht.com/ytc/AKedOLQMmMRmm2fL1MmoqyCeUoBgNmo6EeM0DtSa_s_bHQ=s68-c-k-c0x00ffffff-no-rj"
+              alt=""
+            />
+            <div class="vid-info">
+              <a href="">Découverte | Apprendre à vivre avec la COVID-19</a>
+              <p>
+                Radio-Canada Info
+                <svg
+                  viewBox="0 0 24 24"
+                  preserveAspectRatio="xMidYMid meet"
+                  focusable="false"
+                  class="verified"
+                >
+                  <g class="verified">
+                    <path
+                      d="M12,2C6.5,2,2,6.5,2,12c0,5.5,4.5,10,10,10s10-4.5,10-10C22,6.5,17.5,2,12,2z M9.8,17.3l-4.2-4.1L7,11.8l2.8,2.7L17,7.4 l1.4,1.4L9.8,17.3z"
+                      class="verified"
+                    ></path>
+                  </g>
+                </svg>
+              </p>
+              <p>17K views<span class="little-dot">•</span>2 days ago</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
