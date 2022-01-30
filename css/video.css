@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+nav {
+  top: 0;
+  padding: 10px 2%;
+  position: sticky;
+  justify-content: space-between;
+  display: block;
+  align-items: center;
+  border-bottom: solid 1px rgba(224, 224, 224, 0.534);
+  background-color: #ffffff;
+}
+.yt-icon {
+  width: 24px;
+  height: 24px;
+}
+.flex-div {
+  display: flex;
+  align-items: center;
+}
+/* ----- Logo ----- */
+.yt-logo-container {
+  top: 0;
+  left: 0px;
+  padding: 15px 0px;
+  padding-right: 90px;
+  padding-left: 20px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  z-index: 12;
+  background-color: #ffffff;
+  display: flex;
+}
+.yt-logo-container a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+.yt-logo {
+  width: 35px;
+}
+.logo-text {
+  font-size: 16px;
+  font-weight: 500;
+}
+/* Middle Nav Components */
+
+.nav-middle .search-box {
+  margin-right: 15px;
+  padding: 3px 12px;
+  border: 1px solid #ccc;
+}
+.nav-middle .search-box input {
+  width: 30vw;
+  border: 0;
+  outline: 0;
+  background-color: inherit;
+}
+/* Right Nav Components */
+.nav-right-icon {
+  margin-left: 5px;
+  margin-right: 10px;
+}
+.nav-right img {
+  width: 25px;
+  margin-right: 25px;
+}
+.nav-right .user-icon {
+  width: 35px;
+  border-radius: 50%;
+  margin-right: 0;
+}
+/* --- Bottom Nav --- */
+
+.bottom-nav {
+  border: solid;
+  display: flex;
+  background-color: inherit;
+}
+.bottom-nav .nav-item {
+  margin: 5px 12px 5px 0px;
+  padding: 0px 12px 0px 12px;
+  width: fit-content;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  border-radius: 16px;
+  border: 1.11111px solid rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.05);
+  color: rgba(0, 0, 0, 1);
+}
+.bottom-nav .nav-item a {
+  font-size: 13px;
+  text-decoration: none;
+  color: inherit;
+}
+.bottom-nav .selected {
+  background-color: rgba(0, 0, 0, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+/* --- Main --- */
+main .page-wrapper {
+  border: solid;
+  align-items: center;
+  flex-direction: row-reverse;
+  display: flex;
+}
