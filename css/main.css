@@ -513,3 +513,13 @@ nav {
   font-size: 14px;
   margin-bottom: 5px;
 }
+/* ----- Upload Video Page ----- */
+.upload-video-container {
+  display: flex;
+  margin: 2% 0;
+  padding-left: 250px;
+}
+.upload-video {
+  border: solid;
+  flex-basis: 68%;
+}
