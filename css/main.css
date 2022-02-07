@@ -98,6 +98,9 @@ button {
   margin-left: 5px;
   margin-right: 10px;
 }
+.nav-right a {
+  display: flex;
+}
 .nav-right img {
   width: 25px;
   margin-right: 25px;
