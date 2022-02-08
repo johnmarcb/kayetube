@@ -246,13 +246,25 @@
               <button id="upload">UPLOAD VIDEOS</button>
             </a>
             <div id="open-modal" class="modal-window">
-              <div>
+              <div class="modal-content center">
                 <h1>Video Details</h1>
-                <div>The quick brown fox jumped over the lazy dog.</div>
-
-                <a href="#modal-close" title="Close" class="modal-close"
-                  ><button>Cancel</button></a
-                >
+                <a href="#modal-close" title="Close" class="modal-close">
+                  <button>Cancel</button>
+                </a>
+                <div class="form-container">
+                  <form action="#">
+                    <div class="file-drop-container modal-form">
+                      <input type="file" multiple />
+                      <p class="center flex-div">
+                        Drag your files here or click in this area.
+                        <button>Upload file</button>
+                      </p>
+                    </div>
+                    <div class="modal-form">
+                      <textarea name="" id="" rows="10">test</textarea>
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
