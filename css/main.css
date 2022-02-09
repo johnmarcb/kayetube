@@ -73,7 +73,7 @@ button {
   border: hidden;
 }
 /* ----- Left Navbar Components ----- */
-.yt-logo-container {
+.nav-left {
   top: 0;
   left: 0px;
   padding-right: 90px;
@@ -81,7 +81,7 @@ button {
   display: flex;
   align-items: center;
 }
-.yt-logo-container a {
+.nav-left a {
   display: flex;
   align-items: center;
 }
