@@ -653,6 +653,9 @@ button {
 .modal-form {
   margin-top: 20px;
 }
+.modal-form span {
+  color: #065fd4;
+}
 .modal-form label {
   display: block;
   margin: 0 0 -25px 8px;
@@ -664,4 +667,6 @@ button {
   resize: none;
   width: 100%;
   border-radius: 4px;
+}
+.modal-form .select-container {
 }
