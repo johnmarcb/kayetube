@@ -259,15 +259,15 @@ button {
   grid-row-gap: 30px;
 }
 
-.vid-list .thumbnail {
+.video-list .thumbnail {
   width: 100%;
   border-radius: 2px;
 }
-.vid-list .flex-div {
+.video-list .flex-div {
   margin-top: 7px;
   align-items: flex-start;
 }
-.vid-list .flex-div img {
+.video-list .flex-div img {
   width: 35px;
   margin-right: 10px;
   border-radius: 50%;
