@@ -585,14 +585,16 @@ button {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
+  scrollbar-gutter: stable;
 }
-
 .modal-window:target {
   opacity: 1;
   pointer-events: auto;
   overflow: overlay;
 }
-
+.modal-window::-webkit-scrollbar {
+  width: 0px;
+}
 .modal-window > div {
   width: 1000px;
   height: fit-content;
@@ -614,7 +616,8 @@ button {
   background-color: rgba(96, 96, 96, 0.6);
 }
 
-.modal-close button:hover {
+.modal-close button:hover,
+.modal-form a button:hover {
   background-color: #cc0502;
   transition-duration: 0.55s;
 }
@@ -672,21 +675,14 @@ button {
 .modal-form .radio-select {
   border: hidden;
 }
-.radio-select {
-  margin: 10px 0px;
-}
-.radio-select div {
-  margin: 8px 0px;
-}
-.radio-select label {
-  margin: 10px 5px;
-  font-size: 15px;
-}
 .modal-form select {
   margin-top: 8px;
   width: 250px;
   padding: 10px;
   border-radius: 4px;
+}
+.modal-form a button {
+  width: 10vw;
 }
 .modal-form .warning {
   margin: 8px 0;
@@ -697,4 +693,14 @@ button {
 .warning p,
 .warning span {
   font-size: 12px;
+}
+.radio-select {
+  margin: 10px 0px;
+}
+.radio-select div {
+  margin: 8px 0px;
+}
+.radio-select label {
+  margin: 10px 5px;
+  font-size: 15px;
 }
