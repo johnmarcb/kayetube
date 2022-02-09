@@ -260,7 +260,7 @@
                         <button>Upload file</button>
                       </p>
                     </div>
-                    <div class="modal-form">
+                    <div class="modal-form text-field">
                       <label for="upload-title">Title (required)</label>
                       <textarea
                         name=""
@@ -271,7 +271,7 @@
                         maxlength="100"
                       ></textarea>
                     </div>
-                    <div class="modal-form">
+                    <div class="modal-form text-field">
                       <label for="upload-title">Description (required)</label>
                       <textarea
                         name=""
@@ -289,13 +289,44 @@
                         viewers discover your content faster.
                         <a href="#"><span>Learn more</span></a>
                       </p>
-                      <div class="select-container">
-                        <select name="playlist" id="playlist">
-                          <optgroup>
-                            <option value="Select">Select</option>
-                          </optgroup>
-                        </select>
+                      <select name="playlist" id="playlist">
+                        <optgroup>
+                          <option value="Select">Select</option>
+                          <option value="None">None</option>
+                          <option value="Favorites">Favorites</option>
+                          <option value="Private">Private</option>
+                        </optgroup>
+                      </select>
+                    </div>
+                    <div class="modal-form">
+                      <h3>Audience</h3>
+                      <p>
+                        Regardless of your location, you're legally required to comply
+                        with the Children's Online Privacy Protection Act (COPPA) and/or
+                        other laws. You're required to tell us whether your videos are
+                        made for kids.
+                        <a href="#"><span>What's content made for kids?</span></a>
+                      </p>
+                      <div class="warning">
+                        <p>
+                          Features like personalized ads and notifications won’t be
+                          available on videos made for kids. Videos that are set as made
+                          for kids by you are more likely to be recommended alongside
+                          other kids’ videos. <a href="#"><span>Learn more</span></a>
+                        </p>
                       </div>
+                      <fieldset class="radio-select">
+                        <div>
+                          <input type="radio" name="kids" /><label for=""
+                            >Yes, it's made for kids</label
+                          >
+                        </div>
+                        <div>
+                          <input type="radio" name="kids" /><label for=""
+                            >No, it's not made for kids</label
+                          >
+                        </div>
+                      </fieldset>
                     </div>
                   </form>
                 </div>

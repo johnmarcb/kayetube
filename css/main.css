@@ -30,6 +30,9 @@ hr {
   height: 1px;
   background: #ccc;
 }
+h3 {
+  font-weight: 500;
+}
 a {
   text-decoration: none;
   color: inherit;
@@ -549,9 +552,6 @@ button {
 .mid-container h2 {
   font-weight: 500;
 }
-.mid-container h3 {
-  font-weight: 500;
-}
 .mid-container hr {
   margin: 20px 0px;
 }
@@ -590,6 +590,7 @@ button {
 .modal-window:target {
   opacity: 1;
   pointer-events: auto;
+  overflow: overlay;
 }
 
 .modal-window > div {
@@ -656,17 +657,44 @@ button {
 .modal-form span {
   color: #065fd4;
 }
-.modal-form label {
+.text-field label {
   display: block;
   margin: 0 0 -25px 8px;
   font-size: 13px;
 }
-.modal-form textarea {
+.text-field textarea {
   display: block;
   padding: 25px 0 0 8px;
   resize: none;
   width: 100%;
   border-radius: 4px;
 }
-.modal-form .select-container {
+.modal-form .radio-select {
+  border: hidden;
+}
+.radio-select {
+  margin: 10px 0px;
+}
+.radio-select div {
+  margin: 8px 0px;
+}
+.radio-select label {
+  margin: 10px 5px;
+  font-size: 15px;
+}
+.modal-form select {
+  margin-top: 8px;
+  width: 250px;
+  padding: 10px;
+  border-radius: 4px;
+}
+.modal-form .warning {
+  margin: 8px 0;
+  padding: 10px;
+  background-color: rgba(224, 224, 224, 0.234);
+  border-radius: 5px;
+}
+.warning p,
+.warning span {
+  font-size: 12px;
 }
