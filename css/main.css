@@ -470,15 +470,15 @@ button {
   margin: 0 8px;
 }
 
-.publisher #join-button,
-.publisher #subscribe-button {
+#join-button,
+#subscribe-button {
   font-size: 14px;
   font-weight: 500;
   line-height: normal;
   border-radius: 2px;
 }
 
-.publisher #subscribe-button {
+#subscribe-button {
   width: 109.913px;
   height: 36.6667px;
   background-color: #c00;
@@ -488,7 +488,7 @@ button {
   border: 0;
 }
 
-.publisher #join-button {
+#join-button {
   width: 71.9444px;
   height: 36.875px;
   color: #065fd4;
