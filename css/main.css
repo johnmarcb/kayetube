@@ -665,7 +665,7 @@ button {
 
 .file-drop-container {
   height: 200px;
-  border: 2px dashed #000;
+  border: 2px dashed rgba(200, 200, 200, 1);
 }
 
 .file-drop-container input {
