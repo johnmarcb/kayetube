@@ -418,6 +418,7 @@ button {
 
 .react-buttons {
   display: flex;
+  margin-left: 20px;
   gap: 10px;
 }
 
